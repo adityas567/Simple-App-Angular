@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-center flex-column">
+    <h1>Form</h1>
+    <form #register="ngForm" (ngSubmit)="submit(register.value)">
+        <div class="from-group mb-3">
+            <label for="">Name</label>
+            <input type="text" name="fullName" class="form-control" ngModel>
+        </div>
+        <div class="from-group mb-3">
+            <label for="">Userid</label>
+            <input type="text" name="userid" class="form-control" ngModel>
+        </div>
+        <div class="from-group mb-3">
+            <label for="">Number</label>
+            <input type="text" name="number" class="form-control" ngModel>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+
+
